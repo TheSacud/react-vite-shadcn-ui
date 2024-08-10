@@ -1,9 +1,11 @@
 import CountBtn from '@/components/CountBtn';
 import ReactSVG from '@/assets/react.svg';
 import { Badge } from '@/components/ui/badge';
+import { AuroraBackground } from './components/ui/aurora-background';
 
 function App() {
   return (
+    <AuroraBackground>
     <main className="flex flex-col items-center justify-center h-screen">
       <div className="flex flex-col items-center gap-y-4">
         <div className="inline-flex items-center gap-x-4">
@@ -17,6 +19,7 @@ function App() {
         <CountBtn />
       </div>
     </main>
+    </AuroraBackground>
   );
 }
 
